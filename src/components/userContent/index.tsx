@@ -1,10 +1,6 @@
 import { loginRequest } from "@/config/auth/auth.config";
 import { callImageMsgraph, callMsGraph } from "@/graph";
-import {
-  AuthenticatedTemplate,
-  UnauthenticatedTemplate,
-  useMsal,
-} from "@azure/msal-react";
+import { useMsal } from "@azure/msal-react";
 import { useEffect, useState } from "react";
 import UserDetails from "../userDetails";
 

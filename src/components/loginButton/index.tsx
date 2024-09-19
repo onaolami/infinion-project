@@ -1,10 +1,8 @@
 import { loginRequest } from "@/config/auth/auth.config";
 import { useMsal } from "@azure/msal-react";
-import { useNavigate } from "react-router-dom";
 
 export const LogInButton = () => {
   const { instance } = useMsal();
-  const navigate = useNavigate();
 
   const handleLogin = (loginType: string) => {
     if (loginType === "redirect") {

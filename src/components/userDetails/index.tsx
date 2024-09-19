@@ -1,8 +1,5 @@
 import { IGraphData } from "@/types";
-import React, { useEffect, useState } from "react";
 import avatar from "@/assets/avatar.svg";
-import { useMsal } from "@azure/msal-react";
-import { callImageMsgraph } from "@/graph";
 import { LogOutButton } from "../logoutButton";
 
 interface IProps {
