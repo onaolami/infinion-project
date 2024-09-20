@@ -32,7 +32,7 @@ export const UserContent = () => {
   console.log("PHOTO:", photo);
   return (
     <>
-      <h5 className="card-title">Welcome {accounts[0].name}</h5>
+      <h5 className="card-title text-center">Welcome {accounts[0].name}</h5>
       <br />
       {graphData ? (
         <UserDetails graphData={graphData} photo={photo} />

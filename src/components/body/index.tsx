@@ -19,9 +19,11 @@ const Body = () => {
   return (
     <div className="flex justify-between items-center mx-10">
       <div className="flex-[3]">
-        <h1 className="text-[#292929] text-3xl ">Welcome To Lorem</h1>
+        <h1 className="text-[#292929] text-4xl font-bold pb-4">
+          Welcome To Lorem
+        </h1>
         <p className=" text-[#575757]">
-          Lorem ipsum dolor sit amet consectetur.Sagittis
+          Lorem ipsum dolor sit amet consectetur. Sagittis
           <br /> eget eget erat varius ultrices velit id dictumst. Id adipiscing
           nisl.
         </p>

@@ -8,7 +8,7 @@ interface IProps {
 }
 const UserDetails = ({ graphData, photo }: IProps) => {
   return (
-    <div className=" gap-5 bg-white shadow-2xl  m-[0,auto] p-8 w-[535px] rounded-[10px] border-[1px] border-solid bg-foundation-black-3 border-[#f5f5f5] flex  mx-auto">
+    <div className=" gap-5 bg-white shadow-2xl  m-[0,auto] p-8 w-[535px] rounded-[10px] border-[1px] border-solid bg-foundation-black-3 border-[#f5f5f5] flex  mx-auto mb-5">
       <div>
         <img
           className="w-[100px] aspect-square rounded-full overflow-hidden object-cover h-auto"
@@ -25,6 +25,7 @@ const UserDetails = ({ graphData, photo }: IProps) => {
         <p>{graphData.jobTitle}</p>
         <LogOutButton />
       </div>
+      
     </div>
   );
 };

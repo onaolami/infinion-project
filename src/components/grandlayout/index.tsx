@@ -1,3 +1,4 @@
+import { Footer } from "../footer";
 import { Header } from "../header";
 
 export const GrandLayout = (props: { children: React.ReactNode }) => {
@@ -5,6 +6,7 @@ export const GrandLayout = (props: { children: React.ReactNode }) => {
     <div>
       <Header />
       {props.children}
+      <Footer/>
     </div>
   );
 };
