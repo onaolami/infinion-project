@@ -1,13 +1,14 @@
 import { LogLevel } from "@azure/msal-browser";
 
 const clientId = process.env.REACT_APP_CLIENT_ID as string;
-// const tenant = process.env.REACT_APP_TENANT_ID as string;
+const tenantId = process.env.REACT_APP_TENANT_ID;
 const redirectUri = process.env.REACT_APP_REDIRECT_URI as string;
-
+console.log("tenant is", tenantId);
 export const msalConfig = {
   auth: {
     clientId: clientId,
-    authority: "https://login.microsoftonline.com/215b7ce2-5263-4593-a622-da030405d151",
+
+    authority: `https://login.microsoftonline.com/${tenantId}`,
     redirectUri: redirectUri,
   },
   cache: {
@@ -56,9 +57,9 @@ export const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 export const graphConfig = {
-  graphMeEndpoint: "https://graph.microsoft.com/v1.0/me"
+  graphMeEndpoint: "https://graph.microsoft.com/v1.0/me",
 };
 
 export const graphImageConfig = {
-  graphImageEndPoint: "https://graph.microsoft.com/v1.0/me/photo/$value"
-}
+  graphImageEndPoint: "https://graph.microsoft.com/v1.0/me/photo/$value",
+};

@@ -6,17 +6,15 @@ export const LogInButton = () => {
 
   const handleLogin = (loginType: string) => {
     if (loginType === "redirect") {
-      instance
-        .loginRedirect(loginRequest)
-        .catch((e) => {
-          console.log(e);
-        });
+      instance.loginRedirect(loginRequest).catch((e) => {
+        console.log(e);
+      });
     }
   };
   return (
-    <div className=" border-[#004C55] rounded-[7px] mt-[20px]">
+    <div className="border-[#004C55] pt-[50px]">
       <button
-        className="bg-[#004C55] text-[#FFFFFF] py-[8px] px-[24px] w-[150px] rounded gap-[100px]"
+        className="bg-[#004C55] text-[#FFFFFF] py-[15px] px-[24px] w-[250px]  font-noto  font-bold rounded-[7px] gap-[100px] text-[22px]"
         onClick={() => handleLogin("redirect")}
       >
         Log in
