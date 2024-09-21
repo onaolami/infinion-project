@@ -1,5 +1,6 @@
 import { loginRequest } from "@/config/auth/auth.config";
 import { useMsal } from "@azure/msal-react";
+import { error } from "console";
 
 export const LogInButton = () => {
   const { instance } = useMsal();
